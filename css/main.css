@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
   
 .poppins-regular {
@@ -51,6 +52,7 @@ body {
     border-radius: 40px;
     max-width: 90%;
     background-color: rgba(255, 255, 255, 0.748);
+    z-index: 1000;
 }
 
 .navWords {
@@ -401,4 +403,174 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     color: white;
+}
+
+
+.selection {
+    height: 10vh;
+    background-color: #45016d;
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection .left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.selection .right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.selection i {
+    color: white;
+    margin-right: 5px; 
+}
+
+.selection p {
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box {
+    height: 5vh;
+    width: 4vh;
+    border-radius: 12px;
+    background-color: #ebc8ff;
+    color: #45016d;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box#long  {
+    width: 6vh;
+}
+
+#burger{
+    color: #e51728;
+}
+
+.flightCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: none; 
+    box-shadow: none; 
+    background-color: transparent;
+}
+
+
+.whiteCards #whitebg .card-title {
+    font-family: "Poppins",sans-serif;
+    font-size: 48px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.whiteCards #whitebg .price-section {
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 25px;
+    font-family: "Poppins",sans-serif;
+    margin-left: 50px;
+    padding-top: 50px;
+    
+}
+
+.starReview {
+    color: gold;
+    font-size: 48px;
+    margin-left: 50px;
+    padding-left: 0;
+
+}
+
+#reviewCount {
+    color: grey;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+#whitebg {
+    color: #000000;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+#purpleBtn {
+    background-color: #45016d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.desc  p{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+#purpbg {
+    color: #ffffff;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+#bluebtn {
+    background-color: #00bfff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.purpleCards {
+    background-color: #45016d;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.purpleCards #purpbg .card-title {
+    font-family: "Poppins",sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.purpleCards #purpbg .price-section {
+    margin-bottom: 15px;
+    color: #00bfff;
+    font-size: 25px;
+    font-family: "Poppins",sans-serif;
+    margin-left: 50px;
+    
 }
