@@ -144,6 +144,7 @@ body {
 
 #primary-heading {
     font-size: 70px;
+    font-weight: bold;
 }
 
 #secondary-heading {
@@ -234,12 +235,6 @@ body {
     padding-bottom: 40px;
 }
 
-#shuttleParagraph {
-    color: rgb(70, 70, 70);
-    font-size: 22px;
-    font-family: "Poppins", sans-serif;
-}
-
 #shuttleImg {
     margin-left: 75px;
 }
@@ -287,4 +282,123 @@ body {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+}
+
+
+.contactHeader {
+    height: 45vh;
+    position: relative;
+    background-image: url("../assets/img/headerbackBack.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHeading {
+    font-family: "Porter",sans-serif;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 50px;
+    background-color: white;
+    flex-wrap: wrap; 
+}
+
+.aboutSection img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.aboutSection h2 {
+    color: #e51728;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Poppins",sans-serif;
+}
+
+.aboutSection #primary-heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+}
+
+.shuttleParagraph {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666666;
+    font-family: "Poppins", sans-serif;
+}
+
+.miscSection {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.socialMediaIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.socialMediaIcons img {
+    max-height: 90px;
+    padding-left: 10px;
+}
+
+.map-container {
+    height: 534px;
+    width: 607px;
+}
+
+
+.contactForm {
+    height: 708px;
+    width: 547px;
+    background-image: url("../assets/img/formBack.png");
+    
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.custom-form {
+    color: white; 
+}
+
+.custom-form .form-control {
+    background-color: white;
+    color: black; 
+}
+
+.custom-form .form-control::placeholder {
+    color: gray; 
+}
+
+.contactForm h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
 }
