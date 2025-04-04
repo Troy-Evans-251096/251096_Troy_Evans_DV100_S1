@@ -208,5 +208,38 @@ body {
     width: 270px;
     font-size: 20px;
     border-radius: 12px;
+}
 
+.shuttles-section {
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+    
+    height: 75vh;
+    background-color: white;
+
+}
+
+.shuttlesTextArea {
+    max-height: 477px;
+    max-width: 609px;
+}
+
+#shuttleH1 {
+    color: #45016d;
+    font-size: 55px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    padding-bottom: 40px;
+}
+
+#shuttleParagraph {
+    color: rgb(70, 70, 70);
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+}
+
+#shuttleImg {
+    margin-left: 75px;
 }
