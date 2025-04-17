@@ -296,6 +296,7 @@ body {
     background-image: url("../assets/img/headerbackBack.png");
     background-size: cover;
     background-position: center;
+    
 
     display: flex;
     flex-direction: column;
@@ -577,3 +578,30 @@ body {
     margin-left: 50px;
     
 }
+
+.history-area {
+    height: 75vh;
+    background-color: #ffffff;
+
+
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs-area {
+    height: 75vh;
+    background-color: #45016d;
+
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUsTextArea {
+    padding-left: 5%;
+    max-width: 85%;
+}
+
