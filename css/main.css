@@ -72,7 +72,7 @@ body {
 #searchBar {
     padding-right: 75px;
     height: 55px;
-    width: 450px;
+    width: 25%;
 }
 
 .input-group-text {
@@ -95,15 +95,18 @@ body {
 
 .fa-magnifying-glass {
     transform: scale(1.25);
+    max-width: 2%;
 }
 
 .fa-basket-shopping {
     transform: scale(1.5);
-    margin-right: 10px;
+    margin-right: 2%;
+    max-width: 2%;
 }
 
 .fa-grip-lines-vertical{
     transform: scale(1.2);
+    max-width: 5%;
 }
 
 .input-group {
