@@ -28,7 +28,7 @@
     
     <nav class="navbar">
         <div class="container" id="navBar">
-            <a class="navbar-brand" href="#"> 
+            <a class="navbar-brand" href="../index.html"> 
                 <img src="../assets/img/logo.png" width="266" height="48">
             </a>
 
@@ -41,16 +41,21 @@
 
             <form class="d-flex" role="search" id="searchBar">
                 <div class="input-group">
-                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <button class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <span class="input-group-text"><i class="fa-solid fa-grip-lines-vertical"></i></span>
-                    <span class="input-group-text"><i class="fa-solid fa-basket-shopping"></i></span>
+                    <button type="button" class="input-group-text" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
                     <span class="notification-circle">2</span> 
                 </div>
             </form>
         </div>
     </nav>
 
+    <div class="cartModal" id="cartModal">
+        <h2>The Classic Mars Experience</h2>
+        <h2>Neptune's Cosmic Dive</h2>
+        <button type = "button" id="closeCart" class="red-button">Close</button>
+    </div>
 
     <div class="history-area">
         <div class="shuttlesTextArea">
@@ -69,8 +74,6 @@
             <p class="whiteParagraph">At Red Planet Ventures, we believe the future of humanity lies beyond Earth. Our mission is to pioneer the next era of space exploration by developing innovative technologies that make interplanetary travel, colonization, and resource utilization not only possible but sustainable. From cutting-edge propulsion systems to autonomous robotics and Martian habitat construction, we are committed to pushing the boundaries of what’s achievable. With a passionate team of engineers, scientists, and visionaries, we are laying the foundation for a permanent human presence on Mars and beyond. Whether it's supporting research outposts, enabling commercial ventures, or driving technological breakthroughs, Red Planet Ventures is at the forefront of shaping a new chapter in human history—one that begins on the Red Planet.</p>
         </div>
     </div>
-
-
 
 
       <footer class="bg-light text-black pt-5 pb-0">
@@ -115,6 +118,7 @@
         </div>
       </footer>
 
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

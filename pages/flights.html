@@ -45,30 +45,36 @@
 
 
     
-    <nav class="navbar">
+<nav class="navbar">
         <div class="container" id="navBar">
-            <a class="navbar-brand" href="#"> 
+            <a class="navbar-brand" href="../index.html"> 
                 <img src="../assets/img/logo.png" width="266" height="48">
             </a>
 
             <div class="nav-links">
                 <a href="../index.html" class="navWords">Home</a>
-                <a href="#" class="navWords" id="current-page">Flights</a>
+                <a href="#" id="current-page" class="navWords">Flights</a>
                 <a href="./contacts.html" class="navWords">Contact</a>
                 <a href="./about.html" class="navWords">About</a>
             </div>
 
             <form class="d-flex" role="search" id="searchBar">
                 <div class="input-group">
-                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <button class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <span class="input-group-text"><i class="fa-solid fa-grip-lines-vertical"></i></span>
-                    <span class="input-group-text"><i class="fa-solid fa-basket-shopping"></i></span>
+                    <button class="input-group-text" type= "button" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
                     <span class="notification-circle">2</span> 
                 </div>
             </form>
         </div>
     </nav>
+
+    <div class="cartModal" id="cartModal">
+        <h2>The Classic Mars Experience</h2>
+        <h2>Neptune's Cosmic Dive</h2>
+        <button type = "button" id="closeCart" class="red-button">Close</button>
+    </div>
 
 
     <div class="whiteCards">
@@ -94,11 +100,11 @@
                 </p>
           
                 <div class="d-flex align-items-center">
-                    <button class="red-button" id="purpleBtn">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </button>
+                    <div class="red-button" id="purpleBtn">
+                        <button type ="button" id="minusBtn">-</button>
+                        <p id="number">0</p>
+                        <button type="button" id="plusBtn">+</button>
+                    </div>
                     <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
@@ -142,11 +148,11 @@
                 </p>
           
                 <div class="d-flex align-items-center">
-                    <button class="red-button" id="bluebtn">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </button>
+                    <div class="red-button" id="bluebtn">
+                        <button type ="button" id="minusBtn">-</button>
+                        <p id="number">0</p>
+                        <button type="button" id="plusBtn">+</button>
+                    </div>
                     <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
@@ -190,11 +196,11 @@
                 </p>
           
                 <div class="d-flex align-items-center">
-                    <button class="red-button" id="purpleBtn">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </button>
+                    <div class="red-button" id="purpleBtn">
+                        <button type ="button" id="minusBtn">-</button>
+                        <p id="number">0</p>
+                        <button type="button" id="plusBtn">+</button>
+                    </div>
                     <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
@@ -240,11 +246,11 @@
                 </p>
           
                 <div class="d-flex align-items-center">
-                    <button class="red-button" id="bluebtn">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </button>
+                    <div class="red-button" id="bluebtn">
+                        <button type ="button" id="minusBtn">-</button>
+                        <p id="number">0</p>
+                        <button type="button" id="plusBtn">+</button>
+                    </div>
                     <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
@@ -289,11 +295,11 @@
                 </p>
           
                 <div class="d-flex align-items-center">
-                    <button class="red-button" id="purpleBtn">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </button>
+                    <div class="red-button" id="purpleBtn">
+                        <button type ="button" id="minusBtn">-</button>
+                        <p id="number">0</p>
+                        <button type="button" id="plusBtn">+</button>
+                    </div>
                     <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
@@ -339,11 +345,11 @@
                 </p>
           
                 <div class="d-flex align-items-center">
-                    <button class="red-button" id="bluebtn">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                    </button>
+                    <div class="red-button" id="bluebtn">
+                        <button type ="button" id="minusBtn">-</button>
+                        <p id="number">0</p>
+                        <button type="button" id="plusBtn">+</button>
+                    </div>
                     <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
@@ -406,7 +412,7 @@
   
 
 
-
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

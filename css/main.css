@@ -605,3 +605,71 @@ body {
     max-width: 85%;
 }
 
+.popUpContainer {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popUpContainer.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.popUp {
+    width: 35%;
+    height: 35vh;
+    background-color: #45016d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 5%;
+    transform: translate(0%, -125%);
+}
+
+.cartModal {
+    position: fixed;
+    left: 72%;
+    top: 11%;
+    width: 20%;
+    min-height: 20%;
+    background-color: #45016d;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2%;
+
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 2%;
+
+    z-index: 100;
+}
+
+.cartModal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#minusBtn {
+    background-color: inherit;
+    border: none;
+    color: inherit; 
+}
+
+#plusBtn {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+}
