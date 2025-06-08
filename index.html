@@ -22,8 +22,8 @@
 
 
 <body>
-    <div class="heroSection">
-            <nav class="navbar">
+  <div class="heroSection">
+    <nav class="navbar">
         <div class="container" id="navBar">
             <a class="navbar-brand" href="#"> 
                 <img src="../assets/img/logo.png" width="266" height="48">
@@ -31,17 +31,17 @@
 
             <div class="nav-links">
                 <a href="#" id="current-page" class="navWords">Home</a>
-                <a href="/pages/flights.html" class="navWords">Flights</a>
-                <a href="/pages/contacts.html" class="navWords">Contact</a>
-                <a href="/pages/about.html" class="navWords">About</a>
+                <a href="./pages/flights.html" class="navWords">Flights</a>
+                <a href="./pages/contacts.html" class="navWords">Contact</a>
+                <a href="./pages/about.html" class="navWords">About</a>
             </div>
 
             <form class="d-flex" role="search" id="searchBar">
                 <div class="input-group">
                     <button class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control" id="searchArea" type="search" placeholder="Search" aria-label="Search">
                     <span class="input-group-text"><i class="fa-solid fa-grip-lines-vertical"></i></span>
-                    <button type="button" class="input-group-text" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
+                    <button class="input-group-text" type= "button" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
                     <span class="notification-circle">2</span> 
                 </div>
             </form>
@@ -49,12 +49,31 @@
     </nav>
 
     <div class="cartModal" id="cartModal">
-        <h2>The Classic Mars Experience</h2>
-        <h2>Neptune's Cosmic Dive</h2>
-        <button type = "button" id="closeCart" class="red-button">Close</button>
+        <h2 id="MarsCartText">The Classic Mars Experience: 0</h2>
+        <h2 id="NeptuneCartText">Neptune's Cosmic Dive: 0</h2>
+        <h2 id="JupiterCartText">The Giant's Journey: 0</h2>
+        <h2 id="SaturnCartText">Ring Around Saturn: 0</h2>
+        <h2 id="UranusCartText">Uranus Uncharted: 0</h2>
+        <h2 id="MoonCartText">Moonlight Meander: 0</h2>
+
+        <div class="cartBtns">
+          <button onclick="window.location.href='../index.html'" type = "button" id="checkout" class="red-button">Checkout</button>
+          <button type = "button" id="closeCart" class="red-button">Continue Shopping</button>
+        </div>
     </div>
 
-        <div class="heroSection-heading">
+    <div class="searchResults" id="SearchResults">
+        <p class="flight" onclick="location.href='./pages/flights.html#mars'" style="cursor: pointer;">The Classic Mars Experience</p>
+        <p class="flight" onclick="location.href='./pages/flights.html#neptune'" style="cursor: pointer;">Neptune's Cosmic Dive</p>
+        <p class="flight" onclick="location.href='./pages/flights.html#jupiter'" style="cursor: pointer;">The Giant's Journey (Jupiter)</p>
+        <p class="flight" onclick="location.href='./pages/flights.html#saturn'" style="cursor: pointer;">Ring Around Saturn</p>
+        <p class="flight" onclick="location.href='./pages/flights.html#uranus'" style="cursor: pointer;">Uranus Uncharted</p>
+        <p class="flight" onclick="location.href='./pages/flights.html#moon'" style="cursor: pointer;">Moonlight Meander</p>
+
+        <button type = "button" id="closeSearchResults" class="red-button">Close</button>
+    </div>      
+    
+    <div class="heroSection-heading">
             <h1 id="primary-heading">Red Planet<br>Ventures</h1>
             <h2 id="secondary-heading">Explore the Solar System</h2>
         </div>
@@ -62,6 +81,7 @@
 
     </div>
 
+    
 
     <div class="carousel-area">
         <div id="carouselExample" class="carousel slide">
@@ -96,7 +116,7 @@
                 under Phobos and Deimos. Unforgettable adventures
                 beckon on the rust-colored landscapes of the Red
                 Planet.</p>
-            <button class="red-button">Book Now</button>
+            <button onclick="window.location.href='./pages/flights.html#mars'" class="red-button">Book Now</button>
         </div>
     </div>
 
@@ -132,7 +152,7 @@
                     </div>
         
                     <div class="card custom-card" style="width:278px; height:278px;">
-                        <img class="card-img-top" src="./assets/img/upcomingTrip2.png" alt="Card image cap">
+                        <img class="card-img-top" src="./assets/img/upcomingTrip3.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Neptune's Cosmic Dive</h5>
                             <p class="card-text">Experience Neptune's mysterious depths in a celestial voyage.</p>
@@ -140,7 +160,7 @@
                         </div>
         
                     <div class="card custom-card" style="width:278px; height:278px;">
-                    <img class="card-img-top" src="./assets/img/upcomingTrip3.png" alt="Card image cap">
+                    <img class="card-img-top" src="./assets/img/upcomingTrip2.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Jupiter: The Giant's Journey</h5>
                         <p class="card-text">Embark on Jupiter and witness the gas giant's majesty.</p>
@@ -156,7 +176,7 @@
                         </div>
             </div>
 
-        <button class="red-button" id="tripsBtn">Book a Trip Now</button>
+        <button onclick="window.location.href='./pages/flights.html#mars'" class="red-button" id="tripsBtn">Book a Trip Now</button>
 
     </div>
       

@@ -61,7 +61,7 @@
             <form class="d-flex" role="search" id="searchBar">
                 <div class="input-group">
                     <button class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control" id="searchArea" type="search" placeholder="Search" aria-label="Search">
                     <span class="input-group-text"><i class="fa-solid fa-grip-lines-vertical"></i></span>
                     <button class="input-group-text" type= "button" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
                     <span class="notification-circle">2</span> 
@@ -71,9 +71,28 @@
     </nav>
 
     <div class="cartModal" id="cartModal">
-        <h2>The Classic Mars Experience</h2>
-        <h2>Neptune's Cosmic Dive</h2>
-        <button type = "button" id="closeCart" class="red-button">Close</button>
+        <h2 id="MarsCartText">The Classic Mars Experience: 0</h2>
+        <h2 id="NeptuneCartText">Neptune's Cosmic Dive: 0</h2>
+        <h2 id="JupiterCartText">The Giant's Journey: 0</h2>
+        <h2 id="SaturnCartText">Ring Around Saturn: 0</h2>
+        <h2 id="UranusCartText">Uranus Uncharted: 0</h2>
+        <h2 id="MoonCartText">Moonlight Meander: 0</h2>
+
+        <div class="cartBtns">
+          <button onclick="window.location.href='../index.html'" type = "button" id="checkout" class="red-button">Checkout</button>
+          <button type = "button" id="closeCart" class="red-button">Continue Shopping</button>
+        </div>
+    </div>
+
+    <div class="searchResults" id="SearchResults">
+        <p class="flight" onclick="location.href='#mars'" style="cursor: pointer;">The Classic Mars Experience</p>
+        <p class="flight" onclick="location.href='#neptune'" style="cursor: pointer;">Neptune's Cosmic Dive</p>
+        <p class="flight" onclick="location.href='#jupiter'" style="cursor: pointer;">The Giant's Journey (Jupiter)</p>
+        <p class="flight" onclick="location.href='#saturn'" style="cursor: pointer;">Ring Around Saturn</p>
+        <p class="flight" onclick="location.href='#uranus'" style="cursor: pointer;">Uranus Uncharted</p>
+        <p class="flight" onclick="location.href='#moon'" style="cursor: pointer;">Moonlight Meander</p>
+
+        <button type = "button" id="closeSearchResults" class="red-button">Close</button>
     </div>
 
 
@@ -83,7 +102,7 @@
               <img class="card-img-top" src="../assets/img/flighhtMars.png" alt="" style="width: 40%; height: auto; object-fit: cover;">
               
               <div class="card-body" style="width: 60%;">
-                <h5 class="card-title">The Classic Mars Experience</h5>
+                <h5 class="card-title" id="mars">The Classic Mars Experience</h5>
                 
                 <div class="price-section">
                   <span>R25,000.00</span>
@@ -101,11 +120,11 @@
           
                 <div class="d-flex align-items-center">
                     <div class="red-button" id="purpleBtn">
-                        <button type ="button" id="minusBtn">-</button>
-                        <p id="number">0</p>
-                        <button type="button" id="plusBtn">+</button>
+                        <button type ="button" id="MarsMinusBtn">-</button>
+                        <p id="MarsNumber">0</p>
+                        <button type="button" id="MarsPlusBtn">+</button>
                     </div>
-                    <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
+                    <button class="red-button" id="MarsBuyBtn" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
                 <hr style="width: 90%; margin: 20px auto; border-color: grey;">
@@ -128,7 +147,7 @@
               <img class="card-img-top" src="../assets/img/flightNeptune.png" alt="" style="width: 40%; height: auto; object-fit: cover;">
               
               <div class="card-body" style="width: 60%;">
-                <h5 class="card-title">Neptune's Cosmic Dive</h5>
+                <h5 class="card-title" id="neptune">Neptune's Cosmic Dive</h5>
                 
                 <div class="price-section">
                   <span>R45,000.00</span>
@@ -149,11 +168,11 @@
           
                 <div class="d-flex align-items-center">
                     <div class="red-button" id="bluebtn">
-                        <button type ="button" id="minusBtn">-</button>
-                        <p id="number">0</p>
-                        <button type="button" id="plusBtn">+</button>
+                        <button type ="button" id="NeptuneMinusBtn">-</button>
+                        <p id="NeptuneNumber">0</p>
+                        <button type="button" id="NeptunePlusBtn">+</button>
                     </div>
-                    <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
+                    <button class="red-button" id="NeptuneBuyBtn" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
                 <hr style="width: 90%; margin: 20px auto; border-color: grey;">
@@ -176,7 +195,7 @@
               <img class="card-img-top" src="../assets/img/flightJupiter.png" alt="" style="width: 40%; height: auto; object-fit: cover;">
               
               <div class="card-body" style="width: 60%;">
-                <h5 class="card-title">The Giant's Journey</h5>
+                <h5 class="card-title" id="jupiter">The Giant's Journey</h5>
                 
                 <div class="price-section">
                   <span>R65,000.00</span>
@@ -197,11 +216,11 @@
           
                 <div class="d-flex align-items-center">
                     <div class="red-button" id="purpleBtn">
-                        <button type ="button" id="minusBtn">-</button>
-                        <p id="number">0</p>
-                        <button type="button" id="plusBtn">+</button>
+                        <button type ="button" id="JupiterMinusBtn">-</button>
+                        <p id="JupiterNumber">0</p>
+                        <button type="button" id="JupiterPlusBtn">+</button>
                     </div>
-                    <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
+                    <button class="red-button" id="JupiterBuyBtn" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
                 <hr style="width: 90%; margin: 20px auto; border-color: grey;">
@@ -225,7 +244,7 @@
               <img class="card-img-top" src="../assets/img/flightSaturn.png" alt="" style="width: 40%; height: auto; object-fit: cover;">
               
               <div class="card-body" style="width: 60%;">
-                <h5 class="card-title">Ring Around a Saturn</h5>
+                <h5 class="card-title" id="saturn">Ring Around a Saturn</h5>
                 
                 <div class="price-section">
                   <span>R40,000.00</span>
@@ -247,11 +266,11 @@
           
                 <div class="d-flex align-items-center">
                     <div class="red-button" id="bluebtn">
-                        <button type ="button" id="minusBtn">-</button>
-                        <p id="number">0</p>
-                        <button type="button" id="plusBtn">+</button>
+                        <button type ="button" id="SaturnMinusBtn">-</button>
+                        <p id="SaturnNumber">0</p>
+                        <button type="button" id="SaturnPlusBtn">+</button>
                     </div>
-                    <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
+                    <button class="red-button" id="SaturnBuyBtn" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
                 <hr style="width: 90%; margin: 20px auto; border-color: grey;">
@@ -274,7 +293,7 @@
               <img class="card-img-top" src="../assets/img/flightUranus.png" alt="" style="width: 40%; height: auto; object-fit: cover;">
               
               <div class="card-body" style="width: 60%;">
-                <h5 class="card-title">Uranus Uncharted</h5>
+                <h5 class="card-title" id="uranus">Uranus Uncharted</h5>
                 
                 <div class="price-section">
                   <span>R50,000.00</span>
@@ -296,11 +315,11 @@
           
                 <div class="d-flex align-items-center">
                     <div class="red-button" id="purpleBtn">
-                        <button type ="button" id="minusBtn">-</button>
-                        <p id="number">0</p>
-                        <button type="button" id="plusBtn">+</button>
+                        <button type ="button" id="UranusMinusBtn">-</button>
+                        <p id="UranusNumber">0</p>
+                        <button type="button" id="UranusPlusBtn">+</button>
                     </div>
-                    <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
+                    <button class="red-button" id="UranusBuyBtn" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
                 <hr style="width: 90%; margin: 20px auto; border-color: grey;">
@@ -324,7 +343,7 @@
               <img class="card-img-top" src="../assets/img/flightMoon.png" alt="" style="width: 40%; height: auto; object-fit: cover;">
               
               <div class="card-body" style="width: 60%;">
-                <h5 class="card-title">Moonlight Meander</h5>
+                <h5 class="card-title" id="moon">Moonlight Meander</h5>
                 
                 <div class="price-section">
                   <span>R15,000.00</span>
@@ -346,11 +365,11 @@
           
                 <div class="d-flex align-items-center">
                     <div class="red-button" id="bluebtn">
-                        <button type ="button" id="minusBtn">-</button>
-                        <p id="number">0</p>
-                        <button type="button" id="plusBtn">+</button>
+                        <button type ="button" id="MoonMinusBtn">-</button>
+                        <p id="MoonNumber">0</p>
+                        <button type="button" id="MoonPlusBtn">+</button>
                     </div>
-                    <button class="red-button" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
+                    <button class="red-button" id="MoonBuyBtn" style="margin-top: 50px; margin-bottom: 50px;">Book Now</button>
                 </div>
                 
                 <hr style="width: 90%; margin: 20px auto; border-color: grey;">

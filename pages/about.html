@@ -42,9 +42,9 @@
             <form class="d-flex" role="search" id="searchBar">
                 <div class="input-group">
                     <button class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control" id="searchArea" type="search" placeholder="Search" aria-label="Search">
                     <span class="input-group-text"><i class="fa-solid fa-grip-lines-vertical"></i></span>
-                    <button type="button" class="input-group-text" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
+                    <button class="input-group-text" type= "button" id="openCart"><i class="fa-solid fa-basket-shopping"></i></button>
                     <span class="notification-circle">2</span> 
                 </div>
             </form>
@@ -52,9 +52,28 @@
     </nav>
 
     <div class="cartModal" id="cartModal">
-        <h2>The Classic Mars Experience</h2>
-        <h2>Neptune's Cosmic Dive</h2>
-        <button type = "button" id="closeCart" class="red-button">Close</button>
+        <h2 id="MarsCartText">The Classic Mars Experience: 0</h2>
+        <h2 id="NeptuneCartText">Neptune's Cosmic Dive: 0</h2>
+        <h2 id="JupiterCartText">The Giant's Journey: 0</h2>
+        <h2 id="SaturnCartText">Ring Around Saturn: 0</h2>
+        <h2 id="UranusCartText">Uranus Uncharted: 0</h2>
+        <h2 id="MoonCartText">Moonlight Meander: 0</h2>
+
+        <div class="cartBtns">
+          <button onclick="window.location.href='../index.html'" type = "button" id="checkout" class="red-button">Checkout</button>
+          <button type = "button" id="closeCart" class="red-button">Continue Shopping</button>
+        </div>
+    </div>
+
+    <div class="searchResults" id="SearchResults">
+        <p class="flight" onclick="location.href='./flights.html#mars'" style="cursor: pointer;">The Classic Mars Experience</p>
+        <p class="flight" onclick="location.href='./flights.html#neptune'" style="cursor: pointer;">Neptune's Cosmic Dive</p>
+        <p class="flight" onclick="location.href='./flights.html#jupiter'" style="cursor: pointer;">The Giant's Journey (Jupiter)</p>
+        <p class="flight" onclick="location.href='./flights.html#saturn'" style="cursor: pointer;">Ring Around Saturn</p>
+        <p class="flight" onclick="location.href='./flights.html#uranus'" style="cursor: pointer;">Uranus Uncharted</p>
+        <p class="flight" onclick="location.href='./flights.html#moon'" style="cursor: pointer;">Moonlight Meander</p>
+
+        <button type = "button" id="closeSearchResults" class="red-button">Close</button>
     </div>
 
     <div class="history-area">
